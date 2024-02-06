@@ -1,4 +1,4 @@
-import { T_headerButtonData, T_navLinksData } from "@/types/types";
+import { T_headerButtonData, T_linesData, T_navLinksData } from "@/types/types";
 
 export const navLinksData: T_navLinksData = [
 	{
