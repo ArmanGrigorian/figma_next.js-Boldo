@@ -1,4 +1,4 @@
-import Nav from "@/components/navbar/Nav";
+import { Nav, ReduxProvider } from "@/components";
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
@@ -18,8 +18,10 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={manrope.className}>
-				<Nav />
-				{children}
+				<ReduxProvider>
+					<Nav />
+					{children}
+				</ReduxProvider>
 			</body>
 		</html>
 	);
