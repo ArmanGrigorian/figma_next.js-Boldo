@@ -32,8 +32,8 @@ const config: Config = {
 				"custom-red": "#FC5B00",
 			},
 			backgroundImage: {
-				man: "url('/public/images/man.png')",
-				woman: "url('/public/images/woman.png')",
+				man: "url('/images/man.png')",
+				woman: "url('/images/woman.png')",
 				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
 				"gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
 			},

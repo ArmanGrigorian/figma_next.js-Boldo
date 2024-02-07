@@ -21,3 +21,16 @@ export type LineProps = {
 };
 
 export type T_linesData = LineProps[];
+
+export type T_ourService = {
+	id: string;
+	imgSrc: string;
+	imgWidth: 300;
+	imgHeight: 354;
+	imgAlt: string;
+	title: string;
+	description: string;
+	buttonText: string;
+};
+
+export type T_ourServices = T_ourService[];

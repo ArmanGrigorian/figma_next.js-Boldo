@@ -8,3 +8,4 @@ export { default as Lines } from "./header/Lines";
 export { default as RightSide } from "./header/RightSide";
 export { default as Statistics } from "./header/Statistics";
 export { default as Section } from "./section/Section";
+export { default as OurServices } from "./section/OurServices";
