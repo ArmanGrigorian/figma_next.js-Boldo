@@ -14,25 +14,25 @@ const initialState: interfaceState = {
 			id: "1",
 			isCompleted: false,
 			width: 77,
-			lineColor: "#ECAA00",
+			lineColor: "#e6ebeb",
 		},
 		{
 			id: "2",
 			isCompleted: false,
-			width: 27,
-			lineColor: "#FC5B00",
+			width: 18,
+			lineColor: "#f00a0a",
 		},
 		{
 			id: "3",
 			isCompleted: true,
 			width: 96,
-			lineColor: "#009D10",
+			lineColor: "#1eaa1e",
 		},
 		{
 			id: "4",
 			isCompleted: false,
-			width: 62,
-			lineColor: "#ECAA00",
+			width: 48,
+			lineColor: "#e6ebeb",
 		},
 	],
 };
@@ -51,9 +51,9 @@ export const interfaceSlice = createSlice({
 				else if (line.width <= 1) isCompleted = false;
 
 				let lineColor = line.lineColor;
-				if (line.width > 90) lineColor = "#009D10";
-				else if (line.width < 10) lineColor = "#FC5B00";
-				else lineColor = "#ECAA00";
+				if (line.width >= 80) lineColor = "#1eaa1e";
+				else if (line.width >= 20) lineColor = "#e6ebeb";
+				else lineColor = "#f00a0a";
 
 				const width = line.isCompleted ? line.width - 1 : line.width + 1;
 

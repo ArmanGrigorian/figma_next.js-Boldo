@@ -14,13 +14,13 @@ const Lines = () => {
 			dispatch(calculateLineWidth(linesData));
 		};
 
-		const timeoutId = setTimeout(calculate, 4000);
+		const timeoutId = setTimeout(calculate, 3000);
 
 		return () => clearTimeout(timeoutId);
 	}, [dispatch, linesData]);
 
 	return (
-		<div className="h-full flex flex-col justify-center gap-4 pb-3">
+		<div className="h-full flex flex-col justify-center gap-2">
 			{linesData.map((lineData) => (
 				<Line key={lineData.id} {...lineData} />
 			))}
