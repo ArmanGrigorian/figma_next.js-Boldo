@@ -10,3 +10,7 @@
 	font-family: OpenSans;
 	src: url("/fonts/OpenSans-VariableFont_wdth,wght.ttf");
 }
+
+body {
+	overflow: hidden;
+}

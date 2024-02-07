@@ -1,19 +1,14 @@
-import { T_headerButtonData, T_linesData, T_navLinksData } from "@/types/types";
+import { T_headerButtonData, T_navLinksData } from "@/types/types";
 
 export const navLinksData: T_navLinksData = [
 	{
-		title: "Product",
-		href: "/product",
-		extra: false,
-	},
-	{
-		title: "Services",
-		href: "/services",
-		extra: false,
-	},
-	{
 		title: "About",
 		href: "/about",
+		extra: false,
+	},
+	{
+		title: "Blog",
+		href: "/blog",
 		extra: false,
 	},
 	{
@@ -26,7 +21,7 @@ export const navLinksData: T_navLinksData = [
 export const headerButtonsData: T_headerButtonData = [
 	{
 		title: "Buy template",
-		href: "/product",
+		href: "/blog",
 	},
 	{
 		title: "Explore",

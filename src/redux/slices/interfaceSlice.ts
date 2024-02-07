@@ -57,7 +57,6 @@ export const interfaceSlice = createSlice({
 
 				const width = line.isCompleted ? line.width - 1 : line.width + 1;
 
-				console.log(line);
 				return { ...line, width: width, isCompleted: isCompleted, lineColor: lineColor };
 			});
 		},
