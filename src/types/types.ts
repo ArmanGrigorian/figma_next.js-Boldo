@@ -1,3 +1,10 @@
+import { ReactElement } from "react";
+export interface interfaceState {
+	navMenuIsOpen: boolean;
+	linesData: T_linesData;
+	comments: T_commentsData;
+}
+
 export type T_navLinkData = {
 	title: string;
 	href: string;
@@ -34,3 +41,22 @@ export type T_ourService = {
 };
 
 export type T_ourServices = T_ourService[];
+
+export type T_advantage = {
+	id: string;
+	text: string;
+	icon: ReactElement;
+};
+
+export type T_advantageList = T_advantage[];
+
+export type T_commentData = {
+	id: string;
+	text: string;
+	author: string;
+	role: string;
+	avatar: string;
+	isActive: boolean;
+};
+
+export type T_commentsData = T_commentData[];

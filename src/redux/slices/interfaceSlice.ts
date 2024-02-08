@@ -1,11 +1,7 @@
-import { T_linesData } from "@/types/types";
+import { commentsData } from "@/data/data";
+import { T_linesData, interfaceState } from "@/types/types";
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 import type { RootState } from "../store";
-
-interface interfaceState {
-	navMenuIsOpen: boolean;
-	linesData: T_linesData;
-}
 
 const initialState: interfaceState = {
 	navMenuIsOpen: false,
@@ -35,6 +31,7 @@ const initialState: interfaceState = {
 			lineColor: "#e6ebeb",
 		},
 	],
+	comments: commentsData,
 };
 
 export const interfaceSlice = createSlice({
@@ -60,12 +57,30 @@ export const interfaceSlice = createSlice({
 				return { ...line, width: width, isCompleted: isCompleted, lineColor: lineColor };
 			});
 		},
+		switchComment: (state, { payload }: PayloadAction<string>) => {
+			let idx = 2;
+			state.comments.forEach((comment) => {
+				if (comment.isActive) {
+					idx = Number(comment.id);
+					comment.isActive = false;
+				}
+			});
+
+			if (payload === "next") {
+				idx = (idx + 1) % state.comments.length;
+			} else if (payload === "previous") {
+				idx = (idx - 1 + state.comments.length) % state.comments.length;
+			}
+
+			state.comments[idx].isActive = true;
+		},
 	},
 });
 
+export const selectComments = (state: RootState) => state.interface.comments;
 export const selectNavMenuIsOpen = (state: RootState) => state.interface.navMenuIsOpen;
 export const selectLinesData = (state: RootState) => state.interface.linesData;
 
-export const { toggleNavMenu, calculateLineWidth } = interfaceSlice.actions;
+export const { toggleNavMenu, calculateLineWidth, switchComment } = interfaceSlice.actions;
 
 export default interfaceSlice.reducer;

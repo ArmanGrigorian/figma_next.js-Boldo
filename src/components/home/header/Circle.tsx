@@ -3,7 +3,7 @@ import { Dots } from "..";
 
 const Circle = () => {
 	return (
-		<div className="shadow-2xl w-full h-40 flex flex-col justify-between bg-custom-grey p-5 rounded-2xl max-xl:w-[40%] max-md:w-full">
+		<div className="shadow-xl w-full h-40 flex flex-col justify-between bg-custom-grey p-5 rounded-2xl max-xl:w-[40%] max-md:w-full">
 			<Dots />
 
 			<div className="flex justify-between items-center">
