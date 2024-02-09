@@ -74,3 +74,11 @@ export type BlogProps = {
 };
 
 export type T_ourBlogs = BlogProps[];
+
+export type T_footerList = {
+	id: string;
+	title: string;
+	links: ButtonProps[];
+};
+
+export type T_footerLinks = T_footerList[];

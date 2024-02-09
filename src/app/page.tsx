@@ -1,4 +1,4 @@
-import { Header, OurBlog, OurServices, Subscribe } from "@/components/home";
+import { Footer, Header, OurBlog, OurServices, Subscribe } from "@/components/home";
 
 export default function HomePage() {
 	return (
@@ -7,6 +7,7 @@ export default function HomePage() {
 			<OurServices />
 			<OurBlog />
 			<Subscribe />
+			<Footer />
 		</main>
 	);
 }

@@ -1,3 +1,4 @@
+export { default as Footer } from "./footer/Footer";
 export { default as Button } from "./header/Button";
 export { default as Buttons } from "./header/Buttons";
 export { default as Circle } from "./header/Circle";

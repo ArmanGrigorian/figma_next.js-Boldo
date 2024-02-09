@@ -1,4 +1,5 @@
 export { default as DesktopNav } from "./navbar/DesktopNav";
+export { default as Logo } from "./navbar/Logo";
 export { default as MobileNav } from "./navbar/MobileNav";
 export { default as MobileNavButton } from "./navbar/MobileNavButton";
 export { default as MobileNavMenu } from "./navbar/MobileNavMenu";

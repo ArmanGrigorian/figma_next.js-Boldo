@@ -2,6 +2,7 @@ import {
 	T_advantagesList,
 	T_comments,
 	T_features,
+	T_footerLinks,
 	T_headerButton,
 	T_lines,
 	T_navLinks,
@@ -203,5 +204,62 @@ export const ourBlogsData: T_ourBlogs = [
 		date: "June 22, 2023",
 		author: "Monica Geller",
 		avatar: "/images/monicaGeller.png",
+	},
+];
+
+export const footerLinks: T_footerLinks = [
+	{
+		id: "1",
+		title: "Landings",
+		links: [
+			{
+				title: "Home",
+				href: "/",
+			},
+			{
+				title: "About",
+				href: "/about",
+			},
+			{
+				title: "Blog",
+				href: "/blog",
+			},
+		],
+	},
+	{
+		id: "2",
+		title: "Company",
+		links: [
+			{
+				title: "Home",
+				href: "/",
+			},
+			{
+				title: "About",
+				href: "/about",
+			},
+			{
+				title: "Blog",
+				href: "/blog",
+			},
+		],
+	},
+	{
+		id: "3",
+		title: "Resources",
+		links: [
+			{
+				title: "Home",
+				href: "/",
+			},
+			{
+				title: "About",
+				href: "/about",
+			},
+			{
+				title: "Blog",
+				href: "/blog",
+			},
+		],
 	},
 ];
