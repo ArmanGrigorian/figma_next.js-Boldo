@@ -8,11 +8,11 @@ const Circle = () => {
 
 			<div className="flex justify-between items-center">
 				<Image
-					className="animate-spin"
 					src="/images/circle.png"
 					width={92}
 					height={92}
 					alt="circle png"
+					className="animate-spin"
 				/>
 
 				<div className="h-20 flex flex-col justify-around">

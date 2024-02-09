@@ -36,10 +36,11 @@ const Comments = () => {
 
 				<div className="mt-9 pr-3 flex justify-end items-center gap-10 max-md:w-full max-md:justify-center max-lg:pr-0">
 					<button
-						className="text-custom-white scale-[3]  hover:text-custom-green active:scale-[2.9]"
 						type="button"
 						name="previous"
-						onClick={handleSwitch}>
+						onClick={handleSwitch}
+						className="text-custom-white scale-[3]  hover:text-custom-green active:scale-[2.9]"
+					>
 						<IoArrowBackCircleOutline className="select-none pointer-events-none" />
 					</button>
 					<button
@@ -65,11 +66,11 @@ const Comments = () => {
 
 						<div className="flex items-center gap-3">
 							<Image
-								className="rounded-full w-12 h-12"
 								src={comment.avatar}
 								width={58}
 								height={58}
 								alt={`avatar of ${comment.author}`}
+								className="rounded-full w-12 h-12"
 							/>
 							<div>
 								<figcaption className="font-OpenSans font-bold text-base text-custom-dark-blue max-lg:text-sm">

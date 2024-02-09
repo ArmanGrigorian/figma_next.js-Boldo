@@ -1,24 +1,26 @@
 import { ReactElement } from "react";
 export interface interfaceState {
 	navMenuIsOpen: boolean;
-	lines: T_linesData;
-	comments: T_commentsData;
+	lines: T_lines;
+	comments: T_comments;
 }
 
-export type T_navLinkData = {
+export type T_navLink = {
 	title: string;
 	href: string;
 	extra: boolean;
 };
 
-export type T_navLinksData = T_navLinkData[];
+export type T_navLinks = T_navLink[];
 
 export type NavLinkProps = {
-	linkData: T_navLinkData;
+	link: T_navLink;
 	mobile?: boolean;
 };
 
-export type T_headerButtonData = Omit<T_navLinkData, "extra">[];
+export type ButtonProps = Omit<T_navLink, "extra">;
+
+export type T_headerButton = ButtonProps[];
 
 export type LineProps = {
 	isCompleted: boolean;
@@ -27,9 +29,9 @@ export type LineProps = {
 	lineColor: string;
 };
 
-export type T_linesData = LineProps[];
+export type T_lines = LineProps[];
 
-export type T_featureData = {
+export type T_feature = {
 	id: string;
 	imgSrc: string;
 	imgWidth: 300;
@@ -40,17 +42,17 @@ export type T_featureData = {
 	buttonText: string;
 };
 
-export type T_featuresData = T_featureData[];
+export type T_features = T_feature[];
 
-export type T_advantageData = {
+export type AdvantageProps = {
 	id: string;
 	text: string;
 	icon: ReactElement;
 };
 
-export type T_advantageList = T_advantageData[];
+export type T_advantagesList = AdvantageProps[];
 
-export type T_commentData = {
+export type T_comment = {
 	id: string;
 	text: string;
 	author: string;
@@ -59,4 +61,16 @@ export type T_commentData = {
 	isActive: boolean;
 };
 
-export type T_commentsData = T_commentData[];
+export type T_comments = T_comment[];
+
+export type BlogProps = {
+	id: string;
+	imgSrc: string;
+	imgAlt: string;
+	text: string;
+	date: string;
+	author: string;
+	avatar: string;
+};
+
+export type T_ourBlogs = BlogProps[];

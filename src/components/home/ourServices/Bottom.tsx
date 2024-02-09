@@ -1,4 +1,4 @@
-import { advantageList_C } from "@/data/data";
+import { advantages_C } from "@/data/data";
 
 const Bottom = () => {
 	return (
@@ -8,12 +8,12 @@ const Bottom = () => {
 			</h3>
 
 			<ul>
-				{advantageList_C.map((listItem) => (
-					<li key={listItem.id} className="flex justify-between items-center gap-3 my-3">
+				{advantages_C.map((advantage) => (
+					<li key={advantage.id} className="flex justify-between items-center gap-3 my-3">
 						<strong className="leading-8 text-lg text-custom-dark-blue font-OpenSans font-normal max-md:text-base">
-							{listItem.text}
+							{advantage.text}
 						</strong>
-						{listItem.icon}
+						{advantage.icon}
 					</li>
 				))}
 			</ul>

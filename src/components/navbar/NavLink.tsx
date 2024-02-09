@@ -1,8 +1,8 @@
 import { NavLinkProps } from "@/types/types";
 import Link from "next/link";
 
-const NavLink = ({ linkData, mobile }: NavLinkProps) => {
-	const { title, href, extra } = linkData;
+const NavLink = ({ link, mobile }: NavLinkProps) => {
+	const { title, href, extra } = link;
 
 	if (extra)
 		return (
@@ -11,8 +11,8 @@ const NavLink = ({ linkData, mobile }: NavLinkProps) => {
 					mobile ? "bg-custom-dark-blue text-custom-white" : "text-custom-dark-blue bg-custom-white"
 				} w-28 h-9 rounded-3xl active:scale-95  hover:bg-custom-green hover:text-custom-white`}>
 				<Link
-					className="flex justify-center items-center w-full h-full text-inherit font-bold text-base "
-					href={href}>
+					href={href}
+					className="flex justify-center items-center w-full h-full text-inherit font-bold text-base ">
 					{title}
 				</Link>
 			</li>
@@ -21,12 +21,12 @@ const NavLink = ({ linkData, mobile }: NavLinkProps) => {
 	return (
 		<li className="active:scale-95">
 			<Link
+				href={href}
 				className={`${
 					mobile
 						? " text-custom-dark-blue  hover:text-custom-green  "
 						: "text-custom-white  hover:text-custom-green"
-				} font-semibold text-base`}
-				href={href}>
+				} font-semibold text-base`}>
 				{title}
 			</Link>
 		</li>

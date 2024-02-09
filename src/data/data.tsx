@@ -1,16 +1,17 @@
 import {
-	T_advantageList,
-	T_commentsData,
-	T_featuresData,
-	T_headerButtonData,
-	T_linesData,
-	T_navLinksData,
+	T_advantagesList,
+	T_comments,
+	T_features,
+	T_headerButton,
+	T_lines,
+	T_navLinks,
+	T_ourBlogs,
 } from "@/types/types";
 import { FaCircleCheck } from "react-icons/fa6";
 import { FiFeather } from "react-icons/fi";
 import { IoEyeOutline, IoSunnyOutline } from "react-icons/io5";
 
-export const navLinksData: T_navLinksData = [
+export const navLinksData: T_navLinks = [
 	{
 		title: "About",
 		href: "/about",
@@ -28,7 +29,7 @@ export const navLinksData: T_navLinksData = [
 	},
 ];
 
-export const headerButtonsData: T_headerButtonData = [
+export const headerButtonsData: T_headerButton = [
 	{
 		title: "Buy template",
 		href: "/blog",
@@ -39,7 +40,7 @@ export const headerButtonsData: T_headerButtonData = [
 	},
 ];
 
-export const featuresData: T_featuresData = [
+export const featuresData: T_features = [
 	{
 		id: "1",
 		imgSrc: "/images/working.png",
@@ -72,7 +73,7 @@ export const featuresData: T_featuresData = [
 	},
 ];
 
-export const advantageList_A: T_advantageList = [
+export const advantages_A: T_advantagesList = [
 	{
 		id: "1",
 		text: "We connect our customers with the best",
@@ -90,7 +91,7 @@ export const advantageList_A: T_advantageList = [
 	},
 ];
 
-export const advantageList_B: T_advantageList = [
+export const advantages_B: T_advantagesList = [
 	{
 		id: "4",
 		text: "We connect our customers with the best",
@@ -108,7 +109,7 @@ export const advantageList_B: T_advantageList = [
 	},
 ];
 
-export const advantageList_C = [
+export const advantages_C = [
 	{
 		id: "7",
 		text: "We connect our customers with the best",
@@ -121,7 +122,7 @@ export const advantageList_C = [
 	},
 ];
 
-export const linesData: T_linesData = [
+export const linesData: T_lines = [
 	{
 		id: "1",
 		isCompleted: false,
@@ -148,7 +149,7 @@ export const linesData: T_linesData = [
 	},
 ];
 
-export const commentsData: T_commentsData = [
+export const commentsData: T_comments = [
 	{
 		id: "0",
 		text: "“Buyer buzz partner network disruptive non-disclosure agreement business”",
@@ -172,5 +173,35 @@ export const commentsData: T_commentsData = [
 		role: "Team Leader @ Gryffindor",
 		avatar: "/images/harryPotter.jpg",
 		isActive: false,
+	},
+];
+
+export const ourBlogsData: T_ourBlogs = [
+	{
+		id: "1",
+		imgSrc: "/images/working.png",
+		imgAlt: "working png",
+		text: "Pitch term sheet backing validation focus release.",
+		date: "November 17, 2021",
+		author: "Chandler Bing",
+		avatar: "/images/chandlerBing.png",
+	},
+	{
+		id: "2",
+		imgSrc: "/images/woman.png",
+		imgAlt: "woman png",
+		text: "Seed round direct mailing non-disclosure agreement graphical user interface rockstar.",
+		date: "May 09, 2022",
+		author: "Rachel Green",
+		avatar: "/images/rachelGreen.png",
+	},
+	{
+		id: "3",
+		imgSrc: "/images/busyGuy.jpg",
+		imgAlt: "busy guy jpg",
+		text: "Beta prototype sales iPad gen-z marketing network effects value proposition",
+		date: "June 22, 2023",
+		author: "Monica Geller",
+		avatar: "/images/monicaGeller.png",
 	},
 ];

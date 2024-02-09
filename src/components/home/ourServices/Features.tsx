@@ -22,11 +22,11 @@ const Features = () => {
 						key={feature.id}
 						className="w-[26%] p-5 max-lg:w-full max-lg:flex max-lg:items-center gap-5 drop-shadow-2xl">
 						<Image
-							className="rounded-3xl w-full mb-5 max-lg:w-32 max-lg:h-32 max-lg:mb-0 max-sm:hidden"
 							src={feature.imgSrc}
 							width={feature.imgWidth}
 							height={feature.imgHeight}
 							alt={feature.imgAlt}
+							className="rounded-3xl w-full mb-5 max-lg:w-32 max-lg:h-32 max-lg:mb-0 max-sm:hidden"
 						/>
 						<div>
 							<h4 className="text-2xl font-OpenSans font-normal text-custom-black leading-9 max-md:text-xl">
@@ -36,8 +36,9 @@ const Features = () => {
 								{feature.description}
 							</p>
 							<Link
+								href="/about "
 								className="flex justify-start items-center gap-2 font-OpenSans text-lg font-bold text-custom-dark-blue leading-9 max-md:text-base hover:text-custom-green hover:translate-x-1 active:translate-x-1 active:scale-95"
-								href="/about ">
+							>
 								{feature.buttonText} <FaArrowRightLong />
 							</Link>
 						</div>
