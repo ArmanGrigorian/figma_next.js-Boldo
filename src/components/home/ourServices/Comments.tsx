@@ -28,7 +28,7 @@ const Comments = () => {
 	}
 
 	return (
-		<div className="bg-custom-dark-blue mt-20 p-20 max-lg:p-10 max-lg:mt-10 max-md:p-5 max-md:mt-5">
+		<div className="bg-custom-dark-blue mt-20 p-20 max-lg:p-10 max-lg:mt-10 max-md:p-5 max-md:mt-0">
 			<div className="flex justify-between items-center mb-20 max-lg:mb-10 max-lg:flex-col">
 				<h3 className="w-[70%] text-custom-white text-[40px] leading-[72px] max-md:text-3xl max-lg:w-full max-lg:text-center">
 					An enterprise template to ramp up your company website
@@ -58,7 +58,7 @@ const Comments = () => {
 						key={comment.id}
 						className={`${
 							comment.isActive ? "lg:scale-110 max-lg:visible" : "lg:scale-100 max-lg:hidden"
-						} w-[30%] h-fit p-5 bg-custom-white rounded-xl flex flex-col gap-3 shadow-2xl shadow-custom-grey max-lg:w-[100%]`}>
+						} w-[30%] h-fit p-5 bg-custom-white rounded-xl flex flex-col gap-3 shadow-xl shadow-custom-grey max-lg:w-[100%]`}>
 						<p className="font-OpenSans text-lg font-normal text-custom-black max-lg:text-base">
 							{comment.text}
 						</p>

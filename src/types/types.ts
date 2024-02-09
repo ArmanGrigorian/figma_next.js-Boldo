@@ -1,7 +1,7 @@
 import { ReactElement } from "react";
 export interface interfaceState {
 	navMenuIsOpen: boolean;
-	linesData: T_linesData;
+	lines: T_linesData;
 	comments: T_commentsData;
 }
 
@@ -29,7 +29,7 @@ export type LineProps = {
 
 export type T_linesData = LineProps[];
 
-export type T_ourService = {
+export type T_featureData = {
 	id: string;
 	imgSrc: string;
 	imgWidth: 300;
@@ -40,15 +40,15 @@ export type T_ourService = {
 	buttonText: string;
 };
 
-export type T_ourServices = T_ourService[];
+export type T_featuresData = T_featureData[];
 
-export type T_advantage = {
+export type T_advantageData = {
 	id: string;
 	text: string;
 	icon: ReactElement;
 };
 
-export type T_advantageList = T_advantage[];
+export type T_advantageList = T_advantageData[];
 
 export type T_commentData = {
 	id: string;

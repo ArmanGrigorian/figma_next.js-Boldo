@@ -1,36 +1,11 @@
-import { commentsData } from "@/data/data";
+import { commentsData, linesData } from "@/data/data";
 import { T_linesData, interfaceState } from "@/types/types";
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 import type { RootState } from "../store";
 
 const initialState: interfaceState = {
 	navMenuIsOpen: false,
-	linesData: [
-		{
-			id: "1",
-			isCompleted: false,
-			width: 77,
-			lineColor: "#e6ebeb",
-		},
-		{
-			id: "2",
-			isCompleted: false,
-			width: 18,
-			lineColor: "#f00a0a",
-		},
-		{
-			id: "3",
-			isCompleted: true,
-			width: 96,
-			lineColor: "#1eaa1e",
-		},
-		{
-			id: "4",
-			isCompleted: false,
-			width: 48,
-			lineColor: "#e6ebeb",
-		},
-	],
+	lines: linesData,
 	comments: commentsData,
 };
 
@@ -42,7 +17,7 @@ export const interfaceSlice = createSlice({
 			state.navMenuIsOpen = !state.navMenuIsOpen;
 		},
 		calculateLineWidth(state, { payload }: PayloadAction<T_linesData>) {
-			state.linesData = payload.map((line) => {
+			state.lines = payload.map((line) => {
 				let isCompleted = line.isCompleted;
 				if (line.width >= 99) isCompleted = true;
 				else if (line.width <= 1) isCompleted = false;
@@ -79,7 +54,7 @@ export const interfaceSlice = createSlice({
 
 export const selectComments = (state: RootState) => state.interface.comments;
 export const selectNavMenuIsOpen = (state: RootState) => state.interface.navMenuIsOpen;
-export const selectLinesData = (state: RootState) => state.interface.linesData;
+export const selectLines = (state: RootState) => state.interface.lines;
 
 export const { toggleNavMenu, calculateLineWidth, switchComment } = interfaceSlice.actions;
 

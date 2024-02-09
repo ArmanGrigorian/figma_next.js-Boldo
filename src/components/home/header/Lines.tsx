@@ -1,28 +1,28 @@
 "use client";
 
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
-import { calculateLineWidth, selectLinesData } from "@/redux/slices/interfaceSlice";
+import { calculateLineWidth, selectLines } from "@/redux/slices/interfaceSlice";
 import { Line } from "..";
 import { useEffect } from "react";
 
 const Lines = () => {
 	const dispatch = useAppDispatch();
-	const linesData = useAppSelector(selectLinesData);
+	const lines = useAppSelector(selectLines);
 
 	useEffect(() => {
 		const calculate = () => {
-			dispatch(calculateLineWidth(linesData));
+			dispatch(calculateLineWidth(lines));
 		};
 
 		const timeoutId = setTimeout(calculate, 3000);
 
 		return () => clearTimeout(timeoutId);
-	}, [dispatch, linesData]);
+	}, [dispatch, lines]);
 
 	return (
 		<div className="h-full flex flex-col justify-center gap-2">
-			{linesData.map((lineData) => (
-				<Line key={lineData.id} {...lineData} />
+			{lines.map((line) => (
+				<Line key={line.id} {...line} />
 			))}
 		</div>
 	);
