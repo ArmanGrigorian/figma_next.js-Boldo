@@ -2,13 +2,13 @@ import Image from "next/image";
 
 const Subscribe = () => {
 	return (
-		<section className="relative overflow-hidden bg-custom-dark-blue p-20  max-lg:p-10 max-md:p-5">
+		<section className="relative overflow-hidden rounded-md shadow-xl bg-custom-dark-blue p-20 max-lg:p-10 max-md:p-5 dark:shadow-none">
 			<Image
 				src="/images/corner.png"
 				width={700}
 				height={205}
 				alt="corner decoration"
-				className="absolute top-0 -right-32"
+				className="absolute top-0 -right-32 dark:hidden"
 			/>
 
 			<h2 className="relative z-10 max-w-[842px] mx-auto text-custom-white text-center font-semibold text-[40px] leading-[72px] max-md:text-[28px] max-md:w-[90%] max-md:leading-[42px] max-sm:w-full">

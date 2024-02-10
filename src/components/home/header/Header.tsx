@@ -9,7 +9,7 @@ const Header = () => {
 				<RightSide />
 			</div>
 
-			<Image src="/images/Logo Wall.png" width={1173} height={73} alt="logo wall png" />
+			<Image src="/images/logoWall.png" width={1173} height={73} alt="logo wall png" />
 		</header>
 	);
 };

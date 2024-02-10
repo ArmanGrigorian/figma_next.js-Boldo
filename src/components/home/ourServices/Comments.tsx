@@ -28,7 +28,7 @@ const Comments = () => {
 	}
 
 	return (
-		<div className="bg-custom-dark-blue mt-20 p-20 max-lg:p-10 max-lg:mt-10 max-md:p-5 max-md:mt-0">
+		<div className="rounded-sm shadow-xl bg-custom-dark-blue mt-20 p-20 max-lg:p-10 max-lg:mt-10 max-md:p-5 max-md:mt-0 dark:shadow-none">
 			<div className="flex justify-between items-center mb-20 max-lg:mb-10 max-lg:flex-col">
 				<h3 className="w-[70%] text-custom-white text-[40px] leading-[72px] max-md:text-3xl max-lg:w-full max-lg:text-center">
 					An enterprise template to ramp up your company website
@@ -39,8 +39,7 @@ const Comments = () => {
 						type="button"
 						name="previous"
 						onClick={handleSwitch}
-						className="text-custom-white scale-[3]  hover:text-custom-green active:scale-[2.9]"
-					>
+						className="text-custom-white scale-[3]  hover:text-custom-green active:scale-[2.9]">
 						<IoArrowBackCircleOutline className="select-none pointer-events-none" />
 					</button>
 					<button

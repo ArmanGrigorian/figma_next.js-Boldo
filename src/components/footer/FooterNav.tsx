@@ -1,21 +1,9 @@
-import { Logo } from "@/components";
 import { footerLinks } from "@/data/data";
 import Link from "next/link";
 
-const Footer = () => {
+const FooterNav = () => {
 	return (
-		<footer className="flex justify-between items-start gap-10 flex-wrap p-20 max-lg:p-10 max-md:p-5">
-			<div className="max-w-[300px]">
-				<Logo textColor={"text-custom-dark-blue dark:text-custom-white"} />
-				<p className="text-base font-normal font-OpenSans leading-7 text-custom-light-grey mt-1 dark:text-custom-white">
-					Social media validation business model canvas graphical user interface launch party
-					creative facebook iPad twitter.
-				</p>
-				<small className="text-base font-normal font-OpenSans leading-7 text-custom-light-grey dark:text-custom-white">
-					All rights reserved &copy;
-				</small>
-			</div>
-
+		<>
 			{footerLinks.map((linkGroup) => (
 				<dl
 					key={linkGroup.id}
@@ -35,8 +23,8 @@ const Footer = () => {
 					))}
 				</dl>
 			))}
-		</footer>
+		</>
 	);
 };
 
-export default Footer;
+export default FooterNav;

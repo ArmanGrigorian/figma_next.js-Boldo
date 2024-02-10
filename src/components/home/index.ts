@@ -1,4 +1,3 @@
-export { default as Footer } from "./footer/Footer";
 export { default as Button } from "./header/Button";
 export { default as Buttons } from "./header/Buttons";
 export { default as Circle } from "./header/Circle";
@@ -17,5 +16,5 @@ export { default as Advantages } from "./ourServices/Advantages";
 export { default as Bottom } from "./ourServices/Bottom";
 export { default as Comments } from "./ourServices/Comments";
 export { default as Features } from "./ourServices/Features";
+export { default as Feature } from "./ourServices/Feature";
 export { default as OurServices } from "./ourServices/OurServices";
-export { default as Subscribe } from "./subscribe/Subscribe";

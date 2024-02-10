@@ -31,7 +31,7 @@ export type LineProps = {
 
 export type T_lines = LineProps[];
 
-export type T_feature = {
+export type FeatureProps = {
 	id: string;
 	imgSrc: string;
 	imgWidth: 300;
@@ -42,7 +42,7 @@ export type T_feature = {
 	buttonText: string;
 };
 
-export type T_features = T_feature[];
+export type T_features = FeatureProps[];
 
 export type AdvantageProps = {
 	id: string;
@@ -82,3 +82,28 @@ export type T_footerList = {
 };
 
 export type T_footerLinks = T_footerList[];
+
+export type HeadingProps = {
+	title: string;
+	titleStyles: string;
+	text: string;
+	textStyles: string;
+};
+
+export type ArticleProps = {
+	id: string;
+	title: string;
+	text: string;
+	imgSrc: string;
+};
+
+export type T_articles = ArticleProps[];
+
+export type MemberProps = {
+	id: string;
+	fullName: string;
+	role: string;
+	avatar: string;
+};
+
+export type T_teamMembers = MemberProps[];

@@ -2,7 +2,7 @@
 
 import { useAppSelector } from "@/redux/hooks";
 import { selectNavMenuIsOpen } from "@/redux/slices/interfaceSlice";
-import { MobileNavButton, MobileNavMenu } from "..";
+import { MobileNavButton, MobileNavMenu } from ".";
 
 const MobileNav = () => {
 	const isOpen = useAppSelector(selectNavMenuIsOpen);

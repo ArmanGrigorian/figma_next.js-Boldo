@@ -1,5 +1,7 @@
 import {
+	HeadingProps,
 	T_advantagesList,
+	T_articles,
 	T_comments,
 	T_features,
 	T_footerLinks,
@@ -7,12 +9,18 @@ import {
 	T_lines,
 	T_navLinks,
 	T_ourBlogs,
+	T_teamMembers,
 } from "@/types/types";
 import { FaCircleCheck } from "react-icons/fa6";
 import { FiFeather } from "react-icons/fi";
 import { IoEyeOutline, IoSunnyOutline } from "react-icons/io5";
 
 export const navLinksData: T_navLinks = [
+	{
+		title: "Home",
+		href: "/",
+		extra: false,
+	},
 	{
 		title: "About",
 		href: "/about",
@@ -263,3 +271,87 @@ export const footerLinks: T_footerLinks = [
 		],
 	},
 ];
+
+export const ourServicesHeadingData: HeadingProps = {
+	title: "Our Services",
+	titleStyles: "text-custom-light-grey",
+	text: "Handshake infographic mass market crowdfunding iteration.",
+	textStyles: `text-custom-dark-blue`,
+};
+
+export const ourBlogHeadingData: HeadingProps = {
+	title: "Our Blog",
+	titleStyles: "text-custom-light-grey",
+	text: "Value proposition accelerator product management venture",
+	textStyles: "text-custom-dark-blue",
+};
+
+export const ourStoryData: HeadingProps = {
+	title: "Our story",
+	titleStyles: "text-custom-light-grey",
+	text: "Handshake infographic mass market crowdfunding iteration.",
+	textStyles: "text-custom-dark-blue",
+};
+
+export const ourNumbersData: HeadingProps = {
+	title: "Our Numbers",
+	titleStyles: "text-custom-white",
+	text: "Handshake infographic mass market crowdfunding iteration.",
+	textStyles: "text-custom-white",
+};
+
+export const ourTeamData: HeadingProps = {
+	title: "Our Team",
+	titleStyles: "text-custom-light-grey",
+	text: "The leadership team",
+	textStyles: "text-custom-dark-blue",
+};
+
+export const ourValuesData: HeadingProps = {
+	title: "Our Values",
+	titleStyles: "text-custom-white",
+	text: "The leadership team",
+	textStyles: "text-custom-white",
+};
+
+export const ourValuesArticles: T_articles = [
+	{
+		id: "1",
+		title: "We are committed",
+		text: "Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration",
+		imgSrc: "/images/busyGuy.jpg",
+	},
+	{
+		id: "2",
+		title: "We are committed",
+		text: "Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration",
+		imgSrc: "/images/working.png",
+	},
+	{
+		id: "3",
+		title: "We are committed",
+		text: "Conversion angel investor entrepreneur first mover advantage. Handshake infographic mass market crowdfunding iteration",
+		imgSrc: "/images/people.png",
+	},
+];
+
+ export const teamMembers: T_teamMembers = [
+		{
+			id: "1",
+			fullName: "Michael Scott",
+			role: "General Manager",
+			avatar: "/images/michaelScott.png",
+		},
+		{
+			id: "2",
+			fullName: "Dwight Schrute",
+			role: "General Manager",
+			avatar: "/images/dwightSchrute.png",
+		},
+		{
+			id: "3",
+			fullName: "Pam Beetsley",
+			role: "General Manager",
+			avatar: "/images/pamBeetsley.png",
+		},
+	];
