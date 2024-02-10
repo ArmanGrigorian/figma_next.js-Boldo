@@ -2,7 +2,7 @@ import { Footer, Header, OurBlog, OurServices, Subscribe } from "@/components/ho
 
 export default function HomePage() {
 	return (
-		<main className="max-w-7xl m-auto">
+		<main className="max-w-[1440px] m-auto dark:bg-custom-dark-blue">
 			<Header />
 			<OurServices />
 			<OurBlog />

@@ -5,13 +5,13 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Features = () => {
 	return (
-		<div className="flex flex-col gap-10 p-10 max-md:p-5 max-md:gap-5">
+		<div className="flex flex-col gap-10 p-10 max-md:p-5 max-md:gap-5 dark:bg-custom-dark-blue">
 			<div>
-				<p className="text-center text-custom-light-grey font-normal font-OpenSans text-lg">
+				<p className="text-center text-custom-light-grey font-normal font-OpenSans text-lg dark:text-custom-white">
 					Our Services
 				</p>
 
-				<h2 className="max-w-[842px] mx-auto text-center font-semibold text-[40px] text-custom-black leading-[72px] max-md:text-[28px] max-md:w-[90%] max-md:leading-[42px] max-sm:w-full">
+				<h2 className="max-w-[842px] mx-auto text-center font-semibold text-[40px] text-custom-black leading-[72px] max-md:text-[28px] max-md:w-[90%] max-md:leading-[42px] max-sm:w-full dark:text-custom-white">
 					Handshake infographic mass market crowdfunding iteration.
 				</h2>
 			</div>
@@ -29,16 +29,15 @@ const Features = () => {
 							className="rounded-3xl w-full mb-5 max-lg:w-32 max-lg:h-32 max-lg:mb-0 max-sm:hidden"
 						/>
 						<div>
-							<h4 className="text-2xl font-OpenSans font-normal text-custom-black leading-9 max-md:text-xl">
+							<h4 className="text-2xl font-OpenSans font-normal text-custom-black leading-9 max-md:text-xl dark:text-custom-white">
 								{feature.title}
 							</h4>
-							<p className="text-lg font-OpenSans font-normal text-custom-light-grey leading-8 max-md:text-base">
+							<p className="text-lg font-OpenSans font-normal text-custom-light-grey leading-8 max-md:text-base dark:text-custom-white">
 								{feature.description}
 							</p>
 							<Link
 								href="/about "
-								className="flex justify-start items-center gap-2 font-OpenSans text-lg font-bold text-custom-dark-blue leading-9 max-md:text-base hover:text-custom-green hover:translate-x-1 active:translate-x-1 active:scale-95"
-							>
+								className="flex justify-start items-center gap-2 font-OpenSans text-lg font-bold text-custom-dark-blue leading-9 max-md:text-base hover:text-custom-green hover:translate-x-1 active:translate-x-1 active:scale-95 dark:text-custom-white">
 								{feature.buttonText} <FaArrowRightLong />
 							</Link>
 						</div>
