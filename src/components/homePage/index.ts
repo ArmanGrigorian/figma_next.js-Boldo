@@ -1,4 +1,3 @@
-export { default as Button } from "./header/Button";
 export { default as Buttons } from "./header/Buttons";
 export { default as Circle } from "./header/Circle";
 export { default as Dots } from "./header/Dots";

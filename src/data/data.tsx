@@ -8,6 +8,7 @@ import {
 	T_headerButton,
 	T_lines,
 	T_navLinks,
+	T_newsFeed,
 	T_ourBlogs,
 	T_teamMembers,
 } from "@/types/types";
@@ -335,23 +336,80 @@ export const ourValuesArticles: T_articles = [
 	},
 ];
 
- export const teamMembers: T_teamMembers = [
-		{
-			id: "1",
-			fullName: "Michael Scott",
-			role: "General Manager",
-			avatar: "/images/michaelScott.png",
-		},
-		{
-			id: "2",
-			fullName: "Dwight Schrute",
-			role: "General Manager",
-			avatar: "/images/dwightSchrute.png",
-		},
-		{
-			id: "3",
-			fullName: "Pam Beetsley",
-			role: "General Manager",
-			avatar: "/images/pamBeetsley.png",
-		},
-	];
+export const teamMembers: T_teamMembers = [
+	{
+		id: "1",
+		fullName: "Michael Scott",
+		role: "General Manager",
+		avatar: "/images/michaelScott.png",
+	},
+	{
+		id: "2",
+		fullName: "Dwight Schrute",
+		role: "General Manager",
+		avatar: "/images/dwightSchrute.png",
+	},
+	{
+		id: "3",
+		fullName: "Pam Beetsley",
+		role: "General Manager",
+		avatar: "/images/pamBeetsley.png",
+	},
+];
+
+export const newsFeedData: T_newsFeed = [
+	{
+		id: "1",
+		imgSrc: "/images/working.png",
+		imgAlt: "man at working png",
+		date: "February 9, 2024",
+		text: "The team was notified of the upcoming exam.",
+		author: "Bruce Wayne",
+		avatar: "/images/bat.png",
+	},
+	{
+		id: "2",
+		imgSrc: "/images/woman.png",
+		imgAlt: "woman png",
+		date: "February 10, 2024",
+		text: "I started working on a project",
+		author: "Rachel Green",
+		avatar: "/images/rachelGreen.png",
+	},
+	{
+		id: "3",
+		imgSrc: "/images/busyGuy.jpg",
+		imgAlt: "busy guy jpg",
+		date: "February 11, 2024",
+		text: "Everything turned out to be more complicated than I imagined",
+		author: "Monica Geller",
+		avatar: "/images/monicaGeller.png",
+	},
+	{
+		id: "4",
+		imgSrc: "/images/man.png",
+		imgAlt: "man png",
+		date: "February 16, 2024",
+		text: "Damn I forgot how it worked... I need to repeat it",
+		author: "Chandler Bing",
+		avatar: "/images/chandlerBing.png",
+	},
+	{
+		id: "5",
+		imgSrc: "/images/ourWorkplace.jpg",
+		imgAlt: "our workplace jpg",
+		date: "February 19, 2024",
+		text: "This is your last chance just do it.",
+		author: "King Arthur",
+		avatar: "/images/arthur.png",
+	},
+	{
+		id: "6",
+		imgSrc: "/images/people.png",
+		imgAlt: "cooperation of workers png",
+		date: "February 21, 2024",
+		text: "Our team successfully passed the professional skills exam.",
+		author: "Bruce Wayne",
+		avatar: "/images/bat.png",
+	},
+];

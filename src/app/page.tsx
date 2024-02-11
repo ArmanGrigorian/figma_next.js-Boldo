@@ -1,4 +1,4 @@
-import { Header, OurBlog, OurServices,  } from "@/components/home";
+import { Header, OurBlog, OurServices,  } from "@/components/homePage";
 
 export default function HomePage() {
 	return (

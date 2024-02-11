@@ -1,5 +1,5 @@
 import { headerButtonsData } from "@/data/data";
-import { Button } from "..";
+import { Button } from "@/components";
 
 const Buttons = () => {
 	return (

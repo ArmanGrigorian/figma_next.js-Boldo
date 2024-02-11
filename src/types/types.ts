@@ -107,3 +107,15 @@ export type MemberProps = {
 };
 
 export type T_teamMembers = MemberProps[];
+
+export type NewsFeedItemProps = {
+	id: string;
+	imgSrc: string;
+	imgAlt: string;
+	date: string;
+	text: string;
+	author: string;
+	avatar: string;
+};
+
+export type T_newsFeed = NewsFeedItemProps[];

@@ -1,6 +1,7 @@
 import { advantages_A, advantages_B } from "@/data/data";
 import Image from "next/image";
-import { Advantage, Button } from "..";
+import { Advantage } from "..";
+import { Button } from "@/components";
 
 const OurAdvantages = () => {
 	return (

@@ -1,5 +1,6 @@
+import { Button } from "@/components";
 import { ourBlogsData } from "@/data/data";
-import { Blog, Button } from "..";
+import { Blog } from "..";
 
 const Blogs = () => {
 	return (

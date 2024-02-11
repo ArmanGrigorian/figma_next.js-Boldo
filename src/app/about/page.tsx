@@ -1,4 +1,4 @@
-import { Header, OurNumbers, OurStory, OurTeam, OurValues } from "@/components/about";
+import { Header, OurNumbers, OurStory, OurTeam, OurValues } from "@/components/aboutPage";
 
 const page = () => {
 	return (
