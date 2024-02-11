@@ -1,11 +1,10 @@
-import { Popular, Slider, Title } from "..";
+import { Slider, Title } from "..";
 
 const Header = () => {
 	return (
 		<header>
 			<Title />
 			<Slider />
-			{/* <Popular /> */}
 		</header>
 	);
 };
