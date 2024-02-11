@@ -413,3 +413,5 @@ export const newsFeedData: T_newsFeed = [
 		avatar: "/images/bat.png",
 	},
 ];
+
+

@@ -1,8 +1,9 @@
-import { ReactElement } from "react";
+import { ReactElement, ReactNode } from "react";
 export interface interfaceState {
 	navMenuIsOpen: boolean;
 	lines: T_lines;
 	comments: T_comments;
+	currentIndex: number;
 }
 
 export type T_navLink = {
@@ -108,14 +109,4 @@ export type MemberProps = {
 
 export type T_teamMembers = MemberProps[];
 
-export type NewsFeedItemProps = {
-	id: string;
-	imgSrc: string;
-	imgAlt: string;
-	date: string;
-	text: string;
-	author: string;
-	avatar: string;
-};
-
-export type T_newsFeed = NewsFeedItemProps[];
+export type T_newsFeed = BlogProps[];

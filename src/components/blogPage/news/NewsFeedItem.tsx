@@ -1,8 +1,8 @@
-import { NewsFeedItemProps } from "@/types/types";
+import { BlogProps } from "@/types/types";
 import Image from "next/image";
 import Link from "next/link";
 
-const NewsFeedItem = (newsFeedItem: NewsFeedItemProps) => {
+const NewsFeedItem = (newsFeedItem: BlogProps) => {
 	return (
 		<article className="w-[min(100%,300px)] flex flex-col gap-9">
 			<div>
