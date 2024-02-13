@@ -14,8 +14,12 @@ export const interfaceSlice = createSlice({
 	name: "interface",
 	initialState: initialState,
 	reducers: {
-		toggleNavMenu: (state) => {
-			state.navMenuIsOpen = !state.navMenuIsOpen;
+		toggleNavMenu: (state, { payload }: PayloadAction<boolean | undefined>) => {
+			if (payload) {
+				state.navMenuIsOpen = payload;
+			} else {
+				state.navMenuIsOpen = !state.navMenuIsOpen;
+			}
 		},
 		calculateLineWidth(state, { payload }: PayloadAction<T_lines>) {
 			state.lines = payload.map((line) => {
@@ -65,7 +69,7 @@ export const interfaceSlice = createSlice({
 		},
 
 		goToSlide: (state, action) => {
-			state.currentIndex = action.payload
+			state.currentIndex = action.payload;
 		},
 	},
 });

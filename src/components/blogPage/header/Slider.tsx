@@ -18,7 +18,7 @@ const Slider = () => {
 	useEffect(() => {
 		timerRef.current = setInterval(() => {
 			dispatch(goToNext());
-		}, 3000);
+		}, 6000);
 
 		return () => {
 			clearInterval(timerRef.current);

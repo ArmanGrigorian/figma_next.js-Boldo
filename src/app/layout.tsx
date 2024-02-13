@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={manrope.className}>
+			<body className={`dark:bg-custom-dark-blue ${manrope.className}`}>
 				<ReduxProvider>
 					<Nav />
 					{children}

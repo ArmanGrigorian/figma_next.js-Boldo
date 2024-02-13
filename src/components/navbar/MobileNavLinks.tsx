@@ -1,16 +1,25 @@
 "use client";
 
+import { useAppDispatch } from "@/redux/hooks";
+import { selectNavMenuIsOpen, toggleNavMenu } from "@/redux/slices/interfaceSlice";
 import { NavLinkProps } from "@/types/types";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const NavLink = (link: NavLinkProps) => {
+const MobileNavLinks = (link: NavLinkProps) => {
+	const dispatch = useAppDispatch();
 	const activePage = usePathname();
 	const { title, href, extra } = link;
 
+  function handleCloseMenu() {
+		dispatch(toggleNavMenu(false));
+	}
+
 	if (extra)
 		return (
-			<li className="text-custom-dark-blue bg-custom-white w-28 h-9 rounded-3xl active:scale-95  hover:bg-custom-green hover:text-custom-dark-blue">
+			<li
+				onClick={handleCloseMenu}
+				className="bg-custom-dark-blue text-custom-white w-28 h-9 rounded-3xl active:scale-95  hover:bg-custom-green hover:text-custom-dark-blue">
 				<Link
 					href={href}
 					className={`${
@@ -24,8 +33,11 @@ const NavLink = (link: NavLinkProps) => {
 		);
 
 	return (
-		<li className="text-custom-white  hover:text-custom-green active:scale-95">
+		<li
+			onClick={handleCloseMenu}
+			className="text-custom-dark-blue  hover:text-custom-green active:scale-95">
 			<Link
+				type="button"
 				href={href}
 				className={`${
 					activePage === link.href ? "text-custom-green" : "text-inherit"
@@ -36,4 +48,4 @@ const NavLink = (link: NavLinkProps) => {
 	);
 };
 
-export default NavLink;
+export default MobileNavLinks;

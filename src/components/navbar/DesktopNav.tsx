@@ -5,7 +5,7 @@ const DesktopNav = () => {
 	return (
 		<ul className="flex justify-between items-center gap-9 max-md:hidden">
 			{navLinksData.map((link) => (
-				<NavLink key={link.title} link={link} />
+				<NavLink key={link.title} {...link} />
 			))}
 		</ul>
 	);

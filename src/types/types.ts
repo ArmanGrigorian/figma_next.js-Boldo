@@ -6,20 +6,15 @@ export interface interfaceState {
 	currentIndex: number;
 }
 
-export type T_navLink = {
+export type NavLinkProps = {
 	title: string;
 	href: string;
 	extra: boolean;
 };
 
-export type T_navLinks = T_navLink[];
+export type T_navLinks = NavLinkProps[];
 
-export type NavLinkProps = {
-	link: T_navLink;
-	mobile?: boolean;
-};
-
-export type ButtonProps = Omit<T_navLink, "extra">;
+export type ButtonProps = Omit<NavLinkProps, "extra">;
 
 export type T_headerButton = ButtonProps[];
 
