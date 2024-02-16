@@ -1,15 +1,15 @@
 import { advantages_C } from "@/data/data";
 import Image from "next/image";
+import ourWorkplacePic from "../../../../public/images/ourWorkplace.jpg";
 
 const Bottom = () => {
 	return (
 		<div>
 			<div className="px-20 pt-20 max-lg:px-10  max-lg:pt-10 max-md:px-5 max-md:pt-5">
 				<Image
-					src="/images/ourWorkplace.jpg"
-					width={1100}
-					height={403}
+					src={ourWorkplacePic}
 					alt="urWorkplace jpg"
+					placeholder="blur"
 					className="w-full block shadow-xl rounded-3xl"
 				/>
 			</div>

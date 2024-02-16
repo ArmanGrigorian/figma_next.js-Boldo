@@ -11,7 +11,7 @@ const Feature = (feature: FeatureProps) => {
 				width={feature.imgWidth}
 				height={feature.imgHeight}
 				alt={feature.imgAlt}
-				className="rounded-3xl w-full mb-5 max-lg:w-32 max-lg:h-32 max-lg:mb-0 max-sm:hidden"
+				className="object-cover rounded-3xl w-full mb-5 max-lg:w-32 max-lg:h-32 max-lg:mb-0 max-sm:hidden"
 			/>
 			<div>
 				<h4 className="text-2xl font-OpenSans font-normal text-custom-black leading-9 max-md:text-xl dark:text-custom-white">

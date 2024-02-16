@@ -9,6 +9,7 @@ const Logo = ({ textColor }: { textColor: string }) => {
 				width={26}
 				height={33}
 				alt="Boldo logo svg"
+				priority
 				className="max-md:w-[18px] max-md:h-[25px]"
 			/>
 			<strong

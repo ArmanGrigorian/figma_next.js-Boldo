@@ -1,7 +1,9 @@
+import { Button } from "@/components";
 import { advantages_A, advantages_B } from "@/data/data";
 import Image from "next/image";
 import { Advantage } from "..";
-import { Button } from "@/components";
+import circleGraphPic from "../../../../public/images/circleGraph.png";
+import incomeGraphPic from "../../../../public/images/incomeGraph.png";
 
 const OurAdvantages = () => {
 	return (
@@ -9,11 +11,10 @@ const OurAdvantages = () => {
 			<div className="flex justify-between items-center gap-10">
 				<div className="relative bg-man bg-cover bg-no-repeat w-[400px] h-[412px] drop-shadow-2xl rounded-3xl max-lg:hidden">
 					<Image
-						src="/images/incomeGraph.png"
-						width={141}
-						height={178}
+						src={incomeGraphPic}
+						placeholder="blur"
 						alt="income graph png"
-						className="absolute right-10 -bottom-12 z-10 drop-shadow-xl rounded-xl"
+						className="w-[140px] absolute right-10 -bottom-12 z-10 drop-shadow-xl rounded-xl"
 					/>
 				</div>
 
@@ -45,11 +46,10 @@ const OurAdvantages = () => {
 
 				<div className="relative bg-woman bg-cover bg-no-repeat w-[400px] h-[412px] drop-shadow-2xl rounded-3xl max-lg:hidden">
 					<Image
-						src="/images/circleGraph.png"
-						width={141}
-						height={178}
+						src={circleGraphPic}
 						alt="circle graph png"
-						className="absolute left-10 -bottom-12 z-10 drop-shadow-xl rounded-xl"
+						placeholder="blur"
+						className="w-[140px] absolute left-10 -bottom-12 z-10 drop-shadow-xl rounded-xl"
 					/>
 				</div>
 			</div>
