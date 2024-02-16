@@ -34,14 +34,14 @@ const Slider = () => {
 							onClick={() => {
 								dispatch(goToPrevious());
 							}}
-							className="select-none absolute top-[50%] left-0 translate-y-[-50%] z-10 cursor-pointer text-custom-green text-6xl drop-shadow-xl">
+							className="select-none absolute top-[50%] left-0 translate-y-[-50%] z-10 cursor-pointer text-custom-green text-6xl drop-shadow-xl active:scale-95">
 							❰
 						</div>
 						<div
 							onClick={() => {
 								dispatch(goToNext());
 							}}
-							className="select-none absolute top-[50%] right-0 translate-y-[-50%] z-10 cursor-pointer text-custom-green text-6xl drop-shadow-xl">
+							className="select-none absolute top-[50%] right-0 translate-y-[-50%] z-10 cursor-pointer text-custom-green text-6xl drop-shadow-xl active:scale-95">
 							❱
 						</div>
 					</div>
@@ -90,7 +90,7 @@ const Slider = () => {
 								<div
 									className={`${
 										slideIndex === currentIndex ? "scale-125" : "scale-100"
-									} text-custom-green text-xl cursor-pointer`}
+									} text-custom-green text-xl cursor-pointer active:scale-95`}
 									key={slideIndex}
 									onClick={() => dispatch(goToSlide(slideIndex))}>
 									●
