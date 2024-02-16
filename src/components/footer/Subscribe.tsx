@@ -11,7 +11,7 @@ const Subscribe = () => {
 				className="absolute top-0 -right-32 dark:hidden"
 			/>
 
-			<h2 className="relative z-10 max-w-[842px] mx-auto text-custom-white text-center font-semibold text-[40px] leading-[72px] max-md:text-[28px] max-md:w-[90%] max-md:leading-[42px] max-sm:w-full">
+			<h2 className="relative z-10 max-w-[842px] mx-auto font-Manrope text-custom-white text-center font-semibold text-[40px] leading-[72px] max-md:text-[28px] max-md:w-[90%] max-md:leading-[42px] max-sm:w-full">
 				An enterprise template to ramp up your company website
 			</h2>
 

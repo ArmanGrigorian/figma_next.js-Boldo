@@ -14,8 +14,8 @@ const config: Config = {
 				lg: "0 8px 16px var(--tw-shadow-color)",
 			},
 			fontFamily: {
-				Manrope: ["Manrope", "san-serif"],
-				OpenSans: ["OpenSans", "san-serif"],
+				Manrope: ["var(--font-manrope)"],
+				OpenSans: ["var(--font-open-sans)"],
 			},
 			colors: {
 				"custom-white": "#ffffff",

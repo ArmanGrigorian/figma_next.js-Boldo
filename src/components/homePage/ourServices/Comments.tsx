@@ -30,7 +30,7 @@ const Comments = () => {
 	return (
 		<div className="rounded-sm shadow-xl bg-custom-dark-blue mt-20 p-20 max-lg:p-10 max-lg:mt-10 max-md:p-5 max-md:mt-0 dark:shadow-none">
 			<div className="flex justify-between items-center mb-20 max-lg:mb-10 max-lg:flex-col">
-				<h3 className="w-[70%] text-custom-white text-[40px] leading-[72px] max-md:text-3xl max-lg:w-full max-lg:text-center">
+				<h3 className="w-[70%] font-Manrope text-custom-white text-[40px] leading-[72px] max-md:text-3xl max-lg:w-full max-lg:text-center">
 					An enterprise template to ramp up your company website
 				</h3>
 
@@ -54,7 +54,7 @@ const Comments = () => {
 
 			<div className="flex justify-between items-start max-lg:justify-center max-lg:items-center">
 				{comments.map((comment) => (
-					<figure
+					<article
 						key={comment.id}
 						className={`${
 							comment.isActive ? "lg:scale-110 max-lg:visible" : "lg:scale-100 max-lg:hidden"
@@ -72,15 +72,15 @@ const Comments = () => {
 								className="rounded-full w-12 h-12"
 							/>
 							<div>
-								<figcaption className="font-OpenSans font-bold text-base text-custom-dark-blue max-lg:text-sm">
+								<h4 className="font-OpenSans font-bold text-base text-custom-dark-blue max-lg:text-sm">
 									{comment.author}
-								</figcaption>
+								</h4>
 								<strong className="font-OpenSans text-sm text-custom-dark-blue font-normal">
 									{comment.role}
 								</strong>
 							</div>
 						</div>
-					</figure>
+					</article>
 				))}
 			</div>
 		</div>

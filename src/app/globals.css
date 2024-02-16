@@ -2,15 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-	font-family: Manrope;
-	src: url("/fonts/Manrope-VariableFont_wght.ttf");
-}
-@font-face {
-	font-family: OpenSans;
-	src: url("/fonts/OpenSans-VariableFont_wdth,wght.ttf");
-}
-
 .aboutGradient {
 	background-image: linear-gradient(#0a2640 70%, #ffffff 70%);
 }

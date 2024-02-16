@@ -19,7 +19,7 @@ const NewsFeedItem = (newsFeedItem: BlogProps) => {
 					</strong>
 					{newsFeedItem.date}
 				</p>
-				<p className="overflow-hidden whitespace-nowrap text-ellipsis font-normal text-base text-custom-black leading-8  dark:text-custom-white">
+				<p className="overflow-hidden whitespace-nowrap text-ellipsis font-Manrope font-normal text-base text-custom-black leading-8  dark:text-custom-white">
 					<Link href="#">{newsFeedItem.text}</Link>
 				</p>
 			</div>

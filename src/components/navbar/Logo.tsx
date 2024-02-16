@@ -12,10 +12,10 @@ const Logo = ({ textColor }: { textColor: string }) => {
 				priority
 				className="max-md:w-[18px] max-md:h-[25px]"
 			/>
-			<strong
-				className={`${textColor} "font-bold text-4xl hover:text-custom-green max-md:text-2xl"`}>
+			<h2
+				className={`${textColor} font-Manrope font-bold text-4xl hover:text-custom-green max-md:text-2xl`}>
 				Boldo
-			</strong>
+			</h2>
 		</Link>
 	);
 };

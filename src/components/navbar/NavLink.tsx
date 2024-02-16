@@ -17,7 +17,7 @@ const NavLink = (link: NavLinkProps) => {
 						activePage === link.href
 							? "bg-custom-green text-custom-white"
 							: "bg-inherit text-inherit"
-					} flex justify-center items-center rounded-3xl w-full h-full text-inherit font-bold text-base`}>
+					} font-OpenSans flex justify-center items-center rounded-3xl w-full h-full text-inherit font-bold text-base`}>
 					{title}
 				</Link>
 			</li>
@@ -29,7 +29,7 @@ const NavLink = (link: NavLinkProps) => {
 				href={href}
 				className={`${
 					activePage === link.href ? "text-custom-green" : "text-inherit"
-				} font-semibold text-base`}>
+				} font-semibold font-OpenSans text-base`}>
 				{title}
 			</Link>
 		</li>

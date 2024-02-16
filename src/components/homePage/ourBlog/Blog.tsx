@@ -19,7 +19,7 @@ const Blog = (blog: BlogProps) => {
 					</strong>
 					{blog.date}
 				</p>
-				<p className="overflow-hidden whitespace-nowrap text-ellipsis font-normal text-base text-custom-black leading-8  dark:text-custom-white">
+				<p className="overflow-hidden whitespace-nowrap text-ellipsis font-OpenSans font-normal text-base text-custom-black leading-8  dark:text-custom-white">
 					<Link href="#">{blog.text}</Link>
 				</p>
 			</div>

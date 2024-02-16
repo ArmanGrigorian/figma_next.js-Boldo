@@ -19,7 +19,7 @@ const OurAdvantages = () => {
 				</div>
 
 				<div className="w-[37%] min-w-[410px] flex flex-col gap-4 max-lg:w-full max-lg:min-w-0">
-					<h3 className="text-3xl font-semibold text-custom-dark-blue leading-[42px] max-md:text-xl dark:text-custom-white">
+					<h3 className="font-Manrope text-3xl font-semibold text-custom-dark-blue leading-[42px] max-md:text-xl dark:text-custom-white">
 						We connect our customers with the best, and help them keep up-and stay open.
 					</h3>
 					<ul>
@@ -34,7 +34,7 @@ const OurAdvantages = () => {
 
 			<div className="flex justify-between items-center gap-10">
 				<div className="w-[37%] min-w-[410px] flex flex-col gap-4 max-lg:w-full max-lg:min-w-0">
-					<h3 className="text-3xl font-semibold text-custom-dark-blue  leading-[42px] max-md:text-xl dark:text-custom-white">
+					<h3 className="font-Manrope text-3xl font-semibold text-custom-dark-blue  leading-[42px] max-md:text-xl dark:text-custom-white">
 						We connect our customers with the best, and help them keep up-and stay open.
 					</h3>
 					<ul>

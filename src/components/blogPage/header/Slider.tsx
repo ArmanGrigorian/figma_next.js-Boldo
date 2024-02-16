@@ -64,7 +64,7 @@ const Slider = () => {
 									{newsFeedData[currentIndex].date}
 								</p>
 
-								<h2 className="whitespace-nowrap overflow-hidden text-ellipsis select-none font-semibold text-[40px] leading-[72px] max-md:text-[28px]  max-md:leading-[42px] max-sm:w-full dark:text-custom-white">
+								<h2 className="whitespace-nowrap font-Manrope overflow-hidden text-ellipsis select-none font-semibold text-[40px] leading-[72px] max-md:text-[28px]  max-md:leading-[42px] max-sm:w-full dark:text-custom-white">
 									{newsFeedData[currentIndex].text}
 								</h2>
 

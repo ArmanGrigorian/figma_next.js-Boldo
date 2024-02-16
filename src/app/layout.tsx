@@ -1,9 +1,19 @@
 import { Footer, Nav, ReduxProvider } from "@/components";
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const manrope = Manrope({ subsets: ["latin"] });
+const manrope = localFont({
+	src: "../../public/fonts/Manrope-VariableFont_wght.ttf",
+	variable: "--font-manrope",
+	display: "swap",
+});
+
+const open_sans = localFont({
+	src: "../../public/fonts/OpenSans-VariableFont_wdth,wght.ttf",
+	variable: "--font-open-sans",
+	display: "swap",
+});
 
 export const metadata: Metadata = {
 	title: "Boldo | Home",
@@ -17,7 +27,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`dark:bg-custom-dark-blue ${manrope.className}`}>
+			<body className={`${manrope.variable} ${open_sans.variable} dark:bg-custom-dark-blue`}>
 				<ReduxProvider>
 					<Nav />
 					{children}
