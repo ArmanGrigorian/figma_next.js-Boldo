@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { LeftSide, RightSide } from "..";
+import logoWallPic from "../../../../public/images/logoWall.png";
 
 const Header = () => {
 	return (
@@ -9,7 +10,13 @@ const Header = () => {
 				<RightSide />
 			</div>
 
-			<Image src="/images/logoWall.png" width={1173} height={73} alt="logo wall png" />
+			<Image
+				src={logoWallPic}
+				alt="logo wall png"
+				placeholder="blur"
+				layout="responsive"
+				className="mt-3"
+			/>
 		</header>
 	);
 };
