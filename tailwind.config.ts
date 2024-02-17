@@ -9,7 +9,7 @@ const config: Config = {
 	theme: {
 		extend: {
 			animation: {
-				scroll: "scroll 10000ms linear infinite;",
+				scroll: "scroll 80000ms linear infinite;",
 			},
 			keyframes: {
 				scroll: {
