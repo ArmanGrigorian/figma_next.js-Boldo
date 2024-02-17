@@ -9,11 +9,11 @@ const config: Config = {
 	theme: {
 		extend: {
 			animation: {
-				scroll: "scroll 40000ms linear infinite;",
+				scroll: "scroll 10000ms linear infinite;",
 			},
 			keyframes: {
 				scroll: {
-					from: { transform: "translateX(calc(-49%))" },
+					from: { transform: "translateX(calc(-50%))" },
 					to: { transform: "translateX(calc(0%))" },
 				},
 			},
