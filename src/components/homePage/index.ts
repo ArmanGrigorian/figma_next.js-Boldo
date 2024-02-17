@@ -17,3 +17,4 @@ export { default as Comments } from "./ourServices/Comments";
 export { default as Features } from "./ourServices/Features";
 export { default as Feature } from "./ourServices/Feature";
 export { default as OurServices } from "./ourServices/OurServices";
+export { default as Scroller } from "./header/Scroller";

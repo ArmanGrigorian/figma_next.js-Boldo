@@ -8,6 +8,15 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			animation: {
+				scroll: "scroll 40000ms linear infinite;",
+			},
+			keyframes: {
+				scroll: {
+					from: { transform: "translateX(calc(-49%))" },
+					to: { transform: "translateX(calc(0%))" },
+				},
+			},
 			textShadow: {
 				sm: "0 1px 2px var(--tw-shadow-color)",
 				DEFAULT: "0 2px 4px var(--tw-shadow-color)",

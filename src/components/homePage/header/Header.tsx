@@ -1,6 +1,4 @@
-import Image from "next/image";
-import { LeftSide, RightSide } from "..";
-import logoWallPic from "../../../../public/images/logoWall.png";
+import { LeftSide, RightSide, Scroller } from "..";
 
 const Header = () => {
 	return (
@@ -10,13 +8,7 @@ const Header = () => {
 				<RightSide />
 			</div>
 
-			<Image
-				src={logoWallPic}
-				alt="logo wall png"
-				placeholder="blur"
-				layout="responsive"
-				className="mt-3"
-			/>
+			<Scroller />
 		</header>
 	);
 };
