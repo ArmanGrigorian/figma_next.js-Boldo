@@ -19,7 +19,7 @@ const MobileNavLinks = (link: NavLinkProps) => {
 		return (
 			<li
 				onClick={handleCloseMenu}
-				className="bg-custom-dark-blue text-custom-white w-28 h-9 rounded-3xl active:scale-95  hover:bg-custom-green hover:text-custom-dark-blue">
+				className="bg-custom-dark-blue text-custom-white w-28 h-9 rounded-3xl transition active:scale-95  hover:bg-custom-green hover:text-custom-dark-blue">
 				<Link
 					href={href}
 					className={`${
@@ -35,7 +35,7 @@ const MobileNavLinks = (link: NavLinkProps) => {
 	return (
 		<li
 			onClick={handleCloseMenu}
-			className="text-custom-dark-blue  hover:text-custom-green active:scale-95">
+			className="text-custom-dark-blue transition  hover:text-custom-green active:scale-95">
 			<Link
 				type="button"
 				href={href}

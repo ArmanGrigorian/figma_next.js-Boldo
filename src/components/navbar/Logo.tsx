@@ -13,7 +13,7 @@ const Logo = ({ textColor }: { textColor: string }) => {
 				className="max-md:w-[18px] max-md:h-[25px]"
 			/>
 			<h2
-				className={`${textColor} font-Manrope font-bold text-4xl hover:text-custom-green max-md:text-2xl`}>
+				className={`${textColor} font-Manrope font-bold text-4xl transition hover:text-custom-green max-md:text-2xl`}>
 				Boldo
 			</h2>
 		</Link>

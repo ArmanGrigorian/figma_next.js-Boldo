@@ -39,11 +39,11 @@ const Comments = () => {
 						type="button"
 						name="previous"
 						onClick={handleSwitch}
-						className="text-custom-white scale-[3]  hover:text-custom-green active:scale-[2.9]">
+						className="text-custom-white scale-[3] transition hover:text-custom-green active:scale-[2.9]">
 						<IoArrowBackCircleOutline className="select-none pointer-events-none" />
 					</button>
 					<button
-						className="text-custom-white scale-[3] hover:text-custom-green active:scale-[2.9]"
+						className="text-custom-white scale-[3] transition hover:text-custom-green active:scale-[2.9]"
 						type="button"
 						name="next"
 						onClick={handleSwitch}>

@@ -22,7 +22,7 @@ const Feature = (feature: FeatureProps) => {
 				</p>
 				<Link
 					href="/about "
-					className="flex justify-start items-center gap-2 font-OpenSans text-lg font-bold text-custom-dark-blue leading-9 max-md:text-base hover:text-custom-green hover:translate-x-1 active:translate-x-1 active:scale-95 dark:text-custom-white">
+					className="flex justify-start items-center gap-2 font-OpenSans text-lg font-bold text-custom-dark-blue leading-9 max-md:text-base transition hover:text-custom-green hover:translate-x-1 active:translate-x-1 active:scale-95 dark:text-custom-white">
 					{feature.buttonText} <FaArrowRightLong />
 				</Link>
 			</div>

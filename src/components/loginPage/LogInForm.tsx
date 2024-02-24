@@ -45,7 +45,7 @@ const LogInForm = () => {
 				</p>
 
 				<input
-					className="mt-3 w-44 h-14 font-OpenSans tracking-wide flex justify-center items-center rounded-[56px] border-2 border-custom-white border-solid text-custom-white text-lg font-bold bg-custom-dark-blue hover:bg-custom-green hover:text-custom-dark-blue hover:border-custom-green active:scale-95 select-none max-md:w-32 max-md:h-12 max-md:text-sm"
+					className="mt-3 w-44 h-14 font-OpenSans tracking-wide flex justify-center items-center rounded-[56px] border-2 border-custom-white border-solid text-custom-white text-lg font-bold bg-custom-dark-blue transition hover:bg-custom-green hover:text-custom-dark-blue hover:border-custom-green active:scale-95 select-none max-md:w-32 max-md:h-12 max-md:text-sm"
 					type="submit"
 					value="Sign in"
 				/>

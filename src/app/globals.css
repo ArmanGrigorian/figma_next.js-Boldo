@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.aboutGradient {
-	background-image: linear-gradient(#0a2640 70%, #ffffff 70%);
-}
-
 .textShadow {
 	text-shadow: 1px 1px 1px black;
 }

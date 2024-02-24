@@ -10,7 +10,7 @@ const NavLink = (link: NavLinkProps) => {
 
 	if (extra)
 		return (
-			<li className="text-custom-dark-blue bg-custom-white w-28 h-9 rounded-3xl active:scale-95  hover:bg-custom-green hover:text-custom-dark-blue">
+			<li className="text-custom-dark-blue bg-custom-white w-28 h-9 rounded-3xl transition active:scale-95  hover:bg-custom-green hover:text-custom-dark-blue">
 				<Link
 					href={href}
 					className={`${
@@ -24,7 +24,7 @@ const NavLink = (link: NavLinkProps) => {
 		);
 
 	return (
-		<li className="text-custom-white  hover:text-custom-green active:scale-95">
+		<li className="text-custom-white transition  hover:text-custom-green active:scale-95">
 			<Link
 				href={href}
 				className={`${
